@@ -17,9 +17,8 @@ struct Stack
 stack * newStack() {
 
 	struct Stack * stack = malloc(sizeof(stack));
-	// struct Stack * stack;
 
-	// stack->_s_backStore = malloc(sizeof(void *) * 30);
+     stack->_s_backStore = malloc(sizeof(void *) * MAX_SIZE);
 	stack->_s_top = stack->_s_backStore - 1;
 	stack->_s_size = 0;
 

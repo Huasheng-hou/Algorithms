@@ -6,7 +6,7 @@ struct Stack;
 
 typedef struct Stack stack;
 
-stack * newStack(); // 创建对象
+stack * newStack(void); // 创建对象
 
 void * pop(stack * inputStack); // 出栈
 bool push(stack * inputStack, void * item); // 入栈

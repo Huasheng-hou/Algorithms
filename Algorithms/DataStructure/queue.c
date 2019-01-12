@@ -16,7 +16,7 @@ queue * newQueue() {
 
 	struct Queue * queue = malloc(sizeof(queue));
 
-	queue->_q_backStore = malloc(sizeof(void *) * 80);
+	queue->_q_backStore = malloc(sizeof(void *) * MAX_SIZE);
 	queue->_q_front = queue->_q_backStore;
 	queue->_q_rear = queue->_q_backStore - 1;
 	queue->_q_size = 0;
