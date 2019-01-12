@@ -1,0 +1,4 @@
+**/*.o
+algo
+.DS_Store
+*/.DS_Store
