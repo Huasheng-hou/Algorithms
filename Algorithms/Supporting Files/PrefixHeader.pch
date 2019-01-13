@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  Algorithms
+//
+//  Created by 华生侯 on 2019/1/12.
+//  Copyright © 2019 华生侯. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#include "queue.h"
+#include "stack.h"
+#include "LinkedList.h"
+
+#endif /* PrefixHeader_pch */

@@ -46,3 +46,9 @@ bool push(stack *inputStack, void * item) {
 
 	return true;
 }
+
+bool freeStack(stack * inputStack) {
+    
+    free(inputStack);
+    return true;
+}

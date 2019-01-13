@@ -51,7 +51,6 @@ bool enqueue(queue * inputQueue, void * item) {
 
 bool freeQueue(queue * inputQueue) {
 
-	// free(inputQueue->_q_backStore);
 	free(inputQueue);
 	return true;
 }

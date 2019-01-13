@@ -13,6 +13,8 @@
 		1F6004FF21E9E1C9009423B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6004FE21E9E1C9009423B8 /* main.m */; };
 		1F60050D21E9E287009423B8 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60050921E9E287009423B8 /* stack.c */; };
 		1F60050E21E9E287009423B8 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60050A21E9E287009423B8 /* queue.c */; };
+		1F60051721E9F81A009423B8 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60051621E9F81A009423B8 /* LinkedList.c */; };
+		1F60051A21E9FBC9009423B8 /* Question6.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60051921E9FBC9009423B8 /* Question6.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,11 @@
 		1F60050A21E9E287009423B8 /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
 		1F60050B21E9E287009423B8 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		1F60050C21E9E287009423B8 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		1F60051521E9F81A009423B8 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		1F60051621E9F81A009423B8 /* LinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		1F60051821E9FBC9009423B8 /* Question6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
+		1F60051921E9FBC9009423B8 /* Question6.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question6.c; sourceTree = "<group>"; };
+		1F60051B21E9FBEA009423B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +67,12 @@
 		1F6004F421E9E1C8009423B8 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				1F60050F21E9E2D8009423B8 /* Supporting Files */,
 				1F60050821E9E287009423B8 /* DataStructure */,
+				1F60051021E9E667009423B8 /* Offer */,
 				1F6004F521E9E1C8009423B8 /* AppDelegate.h */,
 				1F6004F621E9E1C8009423B8 /* AppDelegate.m */,
 				1F6004FE21E9E1C9009423B8 /* main.m */,
+				1F60050F21E9E2D8009423B8 /* Supporting Files */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -76,6 +84,8 @@
 				1F60050A21E9E287009423B8 /* queue.c */,
 				1F60050B21E9E287009423B8 /* stack.h */,
 				1F60050921E9E287009423B8 /* stack.c */,
+				1F60051521E9F81A009423B8 /* LinkedList.h */,
+				1F60051621E9F81A009423B8 /* LinkedList.c */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -87,8 +97,18 @@
 				1F6004FA21E9E1C9009423B8 /* MainMenu.xib */,
 				1F6004FD21E9E1C9009423B8 /* Info.plist */,
 				1F60050021E9E1C9009423B8 /* Algorithms.entitlements */,
+				1F60051B21E9FBEA009423B8 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F60051021E9E667009423B8 /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				1F60051821E9FBC9009423B8 /* Question6.h */,
+				1F60051921E9FBC9009423B8 /* Question6.c */,
+			);
+			path = Offer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +183,8 @@
 				1F60050D21E9E287009423B8 /* stack.c in Sources */,
 				1F60050E21E9E287009423B8 /* queue.c in Sources */,
 				1F6004FF21E9E1C9009423B8 /* main.m in Sources */,
+				1F60051721E9F81A009423B8 /* LinkedList.c in Sources */,
+				1F60051A21E9FBC9009423B8 /* Question6.c in Sources */,
 				1F6004F721E9E1C8009423B8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +322,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z3FWA45AZZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Algorithms/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Algorithms/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -318,6 +342,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Z3FWA45AZZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Algorithms/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Algorithms/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
