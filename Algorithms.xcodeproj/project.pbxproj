@@ -16,6 +16,8 @@
 		1F60050E21E9E287009423B8 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60050A21E9E287009423B8 /* queue.c */; };
 		1F60051721E9F81A009423B8 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60051621E9F81A009423B8 /* LinkedList.c */; };
 		1F60051A21E9FBC9009423B8 /* Question6.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F60051921E9FBC9009423B8 /* Question6.c */; };
+		1F6BB95B22199AAF00EF9FEB /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BB95A22199AAF00EF9FEB /* BinaryTree.m */; };
+		1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BB95E22199BF000EF9FEB /* Question7.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		1F60051821E9FBC9009423B8 /* Question6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question6.h; sourceTree = "<group>"; };
 		1F60051921E9FBC9009423B8 /* Question6.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question6.c; sourceTree = "<group>"; };
 		1F60051B21E9FBEA009423B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1F6BB95922199AA200EF9FEB /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		1F6BB95A22199AAF00EF9FEB /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		1F6BB95D22199BF000EF9FEB /* Question7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question7.h; sourceTree = "<group>"; };
+		1F6BB95E22199BF000EF9FEB /* Question7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question7.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 				1F60050921E9E287009423B8 /* stack.c */,
 				1F60051521E9F81A009423B8 /* LinkedList.h */,
 				1F60051621E9F81A009423B8 /* LinkedList.c */,
+				1F6BB95922199AA200EF9FEB /* BinaryTree.h */,
+				1F6BB95A22199AAF00EF9FEB /* BinaryTree.m */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 			children = (
 				1F60051821E9FBC9009423B8 /* Question6.h */,
 				1F60051921E9FBC9009423B8 /* Question6.c */,
+				1F6BB95D22199BF000EF9FEB /* Question7.h */,
+				1F6BB95E22199BF000EF9FEB /* Question7.c */,
 			);
 			path = Offer;
 			sourceTree = "<group>";
@@ -253,8 +263,10 @@
 				1F60050D21E9E287009423B8 /* stack.c in Sources */,
 				1F60050E21E9E287009423B8 /* queue.c in Sources */,
 				1F6004FF21E9E1C9009423B8 /* main.m in Sources */,
+				1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */,
 				1F60051721E9F81A009423B8 /* LinkedList.c in Sources */,
 				1F60051A21E9FBC9009423B8 /* Question6.c in Sources */,
+				1F6BB95B22199AAF00EF9FEB /* BinaryTree.m in Sources */,
 				1F6004F721E9E1C8009423B8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
