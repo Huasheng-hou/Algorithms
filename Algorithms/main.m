@@ -26,5 +26,7 @@ int main(int argc, const char * argv[]) {
     printf("poped number is:%p\n", pop(aStack));
     printf("poped number is:%p\n", pop(aStack));
     
+    freeStack(aStack);
+    
     return NSApplicationMain(argc, argv);
 }

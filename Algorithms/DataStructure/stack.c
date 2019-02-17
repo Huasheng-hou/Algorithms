@@ -18,7 +18,7 @@ stack * newStack() {
 
 	struct Stack * stack = malloc(sizeof(stack));
 
-     stack->_s_backStore = malloc(sizeof(void *) * MAX_SIZE);
+    stack->_s_backStore = malloc(sizeof(void *) * MAX_SIZE);
 	stack->_s_top = stack->_s_backStore - 1;
 	stack->_s_size = 0;
 
@@ -49,6 +49,7 @@ bool push(stack *inputStack, void * item) {
 
 bool freeStack(stack * inputStack) {
     
+    free(inputStack->_s_backStore);
     free(inputStack);
     return true;
 }
