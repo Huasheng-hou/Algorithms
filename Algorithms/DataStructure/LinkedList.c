@@ -20,3 +20,25 @@ bool addToTail(listNode *list, void * valuePointer) {
     
     return true;
 }
+
+bool insert_Tail_LinkedList(listNode *pHead, int value) {
+    
+    if (pHead == NULL) return false;
+    while (pHead->pNext != NULL) {
+        pHead = pHead->pNext;
+    }
+    pHead->pNext = malloc(sizeof(listNode));
+    pHead->pNext->m_nValue = value;
+    
+    return true;
+}
+
+void printFromHead(listNode *pHead) {
+    
+    if (pHead == NULL) return;
+    
+    while (pHead != NULL) {
+        kPrint(pHead->m_nValue);
+        pHead = pHead->pNext;
+    }
+}

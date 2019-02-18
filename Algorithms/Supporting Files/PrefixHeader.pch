@@ -16,5 +16,6 @@
 #include "queue.h"
 #include "stack.h"
 #include "LinkedList.h"
+#include "Utils.h"
 
 #endif /* PrefixHeader_pch */
