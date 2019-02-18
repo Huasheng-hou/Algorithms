@@ -15,7 +15,7 @@ binaryTreeNode * rebuildBinaryTree(int * preOrder, int * inOrder, int length) {
         return NULL;
     }
     
-    binaryTreeNode *root = malloc(sizeof(binaryTreeNode));
+    binaryTreeNode *root = calloc(1, sizeof(binaryTreeNode));
     root->m_nValue = preOrder[0];
     for (int i = 0; i < length; i ++) {
         
@@ -23,6 +23,13 @@ binaryTreeNode * rebuildBinaryTree(int * preOrder, int * inOrder, int length) {
             
             root->m_pLeft = rebuildBinaryTree(preOrder + 1, inOrder, i);
             root->m_pRight = rebuildBinaryTree(preOrder + i + 1, inOrder + i + 1, length - i - 1);
+            
+            if (root->m_pLeft != NULL) {
+                root->m_pLeft->m_pParent = root;
+            }
+            if (root->m_pRight != NULL) {
+                root->m_pRight->m_pParent = root;
+            }
             break;
         }
     }

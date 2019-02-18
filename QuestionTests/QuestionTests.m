@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #include "Question7.h"
+#include "Question8.h"
 
 @interface QuestionTests : XCTestCase
 
@@ -31,6 +32,24 @@
     binaryTreeNode *tree = rebuildBinaryTree(preOrder, inOrder, 8);
     printPreOrder(tree);
     printInOrder(tree);
+}
+
+- (void)testQuestion8 {
+    
+    int preOrder[8] = {1, 2, 4, 7, 3, 5, 6, 8};
+    int inOrder[8] = {4, 7, 2, 1, 5, 3, 8, 6};
+    
+    binaryTreeNode *tree = rebuildBinaryTree(preOrder, inOrder, 8);
+    
+    binaryTreeNode *nextNode = tree;
+    while (nextNode->m_pLeft != NULL) {
+        nextNode = nextNode->m_pLeft;
+    }
+    
+    while (nextNode != NULL) {
+        printf("%d\n", nextNode->m_nValue);
+        nextNode = nextInOrderNode(nextNode);
+    }
 }
 
 - (void)testPerformanceExample {

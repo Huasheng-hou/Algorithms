@@ -12,6 +12,7 @@
 struct BinaryTreeNode {
     
     int m_nValue;
+    struct BinaryTreeNode * m_pParent;
     struct BinaryTreeNode * m_pLeft;
     struct BinaryTreeNode * m_pRight;
 };
