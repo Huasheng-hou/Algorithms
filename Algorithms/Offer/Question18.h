@@ -10,6 +10,7 @@
 #define Question18_h
 
 #include <stdio.h>
+#include "LinkedList.h"
 
 void deleteNode(listNode ** pHead, listNode * pToBeDeleted); // O(1) Solution
 void deleteDuplicateNodes(listNode *pHead);

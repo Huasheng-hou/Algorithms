@@ -21,14 +21,22 @@ void deleteNode(listNode ** pHead, listNode * pToBeDeleted) {
         }
         return;
     }
-    if (pToBeDeleted->pNext == NULL) {
+    if (pToBeDeleted->pNext == NULL) { // 删除尾部节点
         
         listNode *node = *pHead;
         while (node != NULL && node -> pNext != pToBeDeleted) {
             node = node->pNext;
         }
         if (node == NULL) return;
+        node->pNext = NULL;
+        free(pToBeDeleted);
+        return;
     }
+    listNode *nextNode = pToBeDeleted->pNext;
+    pToBeDeleted->m_nValue = nextNode->m_nValue; // 删除中间节点
+    pToBeDeleted->pNext = nextNode->pNext;
+    free(nextNode);
+    nextNode = NULL;
 }
 
 void deleteDuplicateNodes(listNode *pHead) {

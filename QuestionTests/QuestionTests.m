@@ -7,11 +7,14 @@
 //
 
 #import <XCTest/XCTest.h>
+#include "Question6.h"
 #include "Question7.h"
 #include "Question8.h"
 #include "Question11.h"
 #include "Question13.h"
 #include "Question17.h"
+#include "Question18.h"
+#include "Question24.h"
 
 @interface QuestionTests : XCTestCase
 
@@ -25,6 +28,21 @@
 
 - (void)tearDown {
 //    sleep(100);
+}
+
+- (void)testQuestion6 {
+    
+    listNode *pHead = calloc(1, sizeof(listNode));
+    pHead->m_nValue = 1;
+    
+    insert_Tail_LinkedList(pHead, 2);
+    insert_Tail_LinkedList(pHead, 3);
+    insert_Tail_LinkedList(pHead, 4);
+    insert_Tail_LinkedList(pHead, 5);
+    insert_Tail_LinkedList(pHead, 6);
+    
+    printFromHead(pHead);
+    printLinkedList_Reversely(pHead);
 }
 
 - (void)testQuestion7 {
@@ -72,6 +90,21 @@
 - (void)testQuestion17 {
     
     printToMaxOfNDigits(15);
+}
+
+- (void)testQuestion18 {
+    
+    listNode *pHead = calloc(1, sizeof(listNode));
+    pHead->m_nValue = 1;
+    
+    insert_Tail_LinkedList(pHead, 2);
+    insert_Tail_LinkedList(pHead, 3);
+    insert_Tail_LinkedList(pHead, 4);
+    insert_Tail_LinkedList(pHead, 5);
+    insert_Tail_LinkedList(pHead, 6);
+    
+    printFromHead(pHead);
+    printLinkedList_Reversely(pHead);
 }
 
 - (void)testPerformanceExample {

@@ -21,6 +21,8 @@ struct ListNode {
 
 typedef struct ListNode listNode;
 
+listNode * newNode(void); // return an empty node
+
 bool addToTail(listNode *list, void * valuePointer); // 向尾部添加节点
 bool insert_Tail_LinkedList(listNode *pHead, int value); // 向尾部添加节点，整数表示
 

@@ -10,6 +10,7 @@
 #define Question6_h
 
 #include <stdio.h>
+#include "LinkedList.h"
 
 void printLinkedList_Reversely(listNode *list);
 

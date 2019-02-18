@@ -9,13 +9,19 @@
 #include "LinkedList.h"
 #include <stdlib.h>
 
+listNode * newNode() {
+    
+    listNode *node = calloc(1, sizeof(listNode));
+    return node;
+}
+
 bool addToTail(listNode *list, void * valuePointer) {
     
     if (!list || list == NULL) return false;
     while (list->pNext != NULL) {
         list = list->pNext;
     }
-    list->pNext = malloc(sizeof(listNode));
+    list->pNext = newNode();
     list->pNext->content = valuePointer;
     
     return true;
@@ -27,7 +33,7 @@ bool insert_Tail_LinkedList(listNode *pHead, int value) {
     while (pHead->pNext != NULL) {
         pHead = pHead->pNext;
     }
-    pHead->pNext = malloc(sizeof(listNode));
+    pHead->pNext = newNode();
     pHead->pNext->m_nValue = value;
     
     return true;
