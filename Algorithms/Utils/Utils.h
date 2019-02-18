@@ -14,5 +14,6 @@
 #define kPrint(x) printf("result is:%d\n", x)
 
 bool ** alloc2DArray(int row, int column);
+char * strcpyAndAllocate(char *des, const char *src);
 
 #endif /* Utils_h */

@@ -7,6 +7,7 @@
 //
 
 #include "Utils.h"
+#include "strings.h"
 
 bool ** alloc2DArray(int row, int column) {
     
@@ -16,4 +17,12 @@ bool ** alloc2DArray(int row, int column) {
         matrix[i] = matrix[0] + i * column;
     }
     return matrix;
+}
+
+char * strcpyAndAllocate(char *des, const char *src) {
+    
+    char * buffer = malloc(strlen(des) + strlen(src) + 1);
+    strcpy(buffer, des);
+    strcat(buffer, src);
+    return buffer;
 }

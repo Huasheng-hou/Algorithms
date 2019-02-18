@@ -11,6 +11,7 @@
 #include "Question8.h"
 #include "Question11.h"
 #include "Question13.h"
+#include "Question17.h"
 
 @interface QuestionTests : XCTestCase
 
@@ -66,6 +67,11 @@
     
     int count = robotMovingRange(18);
     printf("%d\n", count);
+}
+
+- (void)testQuestion17 {
+    
+    printToMaxOfNDigits(15);
 }
 
 - (void)testPerformanceExample {
