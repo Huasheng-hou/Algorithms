@@ -10,5 +10,11 @@
 
 listNode * reverseLinkedList(listNode *pHead) {
     
+    if (pHead == NULL) return NULL;
+    listNode *tmpNode;
+    
+    while (pHead != NULL) { // 1次遍历，逐个翻转，时间复杂度 O(n)
+        
+    }
     return NULL;
 }
