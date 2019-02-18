@@ -21,6 +21,8 @@
 		6403CE74221A4585006C489E /* Question8.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE73221A4585006C489E /* Question8.c */; };
 		6403CE78221A5A4A006C489E /* SortAge.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE77221A5A4A006C489E /* SortAge.c */; };
 		6403CE7B221A5B05006C489E /* Question11.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE7A221A5B05006C489E /* Question11.c */; };
+		6403CE7E221A6114006C489E /* Question13.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE7D221A6114006C489E /* Question13.c */; };
+		64CD9D0C221A861E0000B14C /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D0B221A861E0000B14C /* Utils.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		6403CE77221A5A4A006C489E /* SortAge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortAge.c; sourceTree = "<group>"; };
 		6403CE79221A5B05006C489E /* Question11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question11.h; sourceTree = "<group>"; };
 		6403CE7A221A5B05006C489E /* Question11.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question11.c; sourceTree = "<group>"; };
+		6403CE7C221A6114006C489E /* Question13.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question13.h; sourceTree = "<group>"; };
+		6403CE7D221A6114006C489E /* Question13.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question13.c; sourceTree = "<group>"; };
+		64CD9D0A221A861E0000B14C /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		64CD9D0B221A861E0000B14C /* Utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 			children = (
 				1F60050821E9E287009423B8 /* DataStructure */,
 				1F60051021E9E667009423B8 /* Offer */,
+				64CD9D09221A85F70000B14C /* Utils */,
 				1F6004F521E9E1C8009423B8 /* AppDelegate.h */,
 				1F6004F621E9E1C8009423B8 /* AppDelegate.m */,
 				1F6004FE21E9E1C9009423B8 /* main.m */,
@@ -163,6 +170,8 @@
 				6403CE73221A4585006C489E /* Question8.c */,
 				6403CE79221A5B05006C489E /* Question11.h */,
 				6403CE7A221A5B05006C489E /* Question11.c */,
+				6403CE7C221A6114006C489E /* Question13.h */,
+				6403CE7D221A6114006C489E /* Question13.c */,
 			);
 			path = Offer;
 			sourceTree = "<group>";
@@ -174,6 +183,15 @@
 				6403CE77221A5A4A006C489E /* SortAge.c */,
 			);
 			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		64CD9D09221A85F70000B14C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				64CD9D0A221A861E0000B14C /* Utils.h */,
+				64CD9D0B221A861E0000B14C /* Utils.c */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,11 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CD9D0C221A861E0000B14C /* Utils.c in Sources */,
 				1F60050D21E9E287009423B8 /* stack.c in Sources */,
 				6403CE78221A5A4A006C489E /* SortAge.c in Sources */,
 				6403CE74221A4585006C489E /* Question8.c in Sources */,
 				1F60050E21E9E287009423B8 /* queue.c in Sources */,
 				1F6004FF21E9E1C9009423B8 /* main.m in Sources */,
+				6403CE7E221A6114006C489E /* Question13.c in Sources */,
 				6403CE7B221A5B05006C489E /* Question11.c in Sources */,
 				1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */,
 				1F60051721E9F81A009423B8 /* LinkedList.c in Sources */,

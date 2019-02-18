@@ -10,6 +10,7 @@
 #include "Question7.h"
 #include "Question8.h"
 #include "Question11.h"
+#include "Question13.h"
 
 @interface QuestionTests : XCTestCase
 
@@ -25,7 +26,7 @@
 //    sleep(100);
 }
 
-- (void)testExample {
+- (void)testQuestion7 {
     
     int preOrder[8] = {1, 2, 4, 7, 3, 5, 6, 8};
     int inOrder[8] = {4, 7, 2, 1, 5, 3, 8, 6};
@@ -59,6 +60,12 @@
     
     int min = findMinInRotatedArray(array, 10);
     printf("min number is:%d\n", min);
+}
+
+- (void)testQuestion13 {
+    
+    int count = robotMovingRange(18);
+    printf("%d\n", count);
 }
 
 - (void)testPerformanceExample {
