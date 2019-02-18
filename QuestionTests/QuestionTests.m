@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #include "Question7.h"
 #include "Question8.h"
+#include "Question11.h"
 
 @interface QuestionTests : XCTestCase
 
@@ -50,6 +51,14 @@
         printf("%d\n", nextNode->m_nValue);
         nextNode = nextInOrderNode(nextNode);
     }
+}
+
+- (void)testQuestion11 {
+    
+    int array[10] = {8, 9, 10, 1, 2, 3, 4, 5, 6, 7};
+    
+    int min = findMinInRotatedArray(array, 10);
+    printf("min number is:%d\n", min);
 }
 
 - (void)testPerformanceExample {

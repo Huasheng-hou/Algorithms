@@ -19,6 +19,8 @@
 		1F6BB95B22199AAF00EF9FEB /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BB95A22199AAF00EF9FEB /* BinaryTree.m */; };
 		1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F6BB95E22199BF000EF9FEB /* Question7.c */; };
 		6403CE74221A4585006C489E /* Question8.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE73221A4585006C489E /* Question8.c */; };
+		6403CE78221A5A4A006C489E /* SortAge.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE77221A5A4A006C489E /* SortAge.c */; };
+		6403CE7B221A5B05006C489E /* Question11.c in Sources */ = {isa = PBXBuildFile; fileRef = 6403CE7A221A5B05006C489E /* Question11.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		1F6BB95E22199BF000EF9FEB /* Question7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question7.c; sourceTree = "<group>"; };
 		6403CE72221A4585006C489E /* Question8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question8.h; sourceTree = "<group>"; };
 		6403CE73221A4585006C489E /* Question8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question8.c; sourceTree = "<group>"; };
+		6403CE76221A5A4A006C489E /* SortAge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAge.h; sourceTree = "<group>"; };
+		6403CE77221A5A4A006C489E /* SortAge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortAge.c; sourceTree = "<group>"; };
+		6403CE79221A5B05006C489E /* Question11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question11.h; sourceTree = "<group>"; };
+		6403CE7A221A5B05006C489E /* Question11.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question11.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,14 +154,26 @@
 		1F60051021E9E667009423B8 /* Offer */ = {
 			isa = PBXGroup;
 			children = (
+				6403CE75221A59FC006C489E /* Miscellaneous */,
 				1F60051821E9FBC9009423B8 /* Question6.h */,
 				1F60051921E9FBC9009423B8 /* Question6.c */,
 				1F6BB95D22199BF000EF9FEB /* Question7.h */,
 				1F6BB95E22199BF000EF9FEB /* Question7.c */,
 				6403CE72221A4585006C489E /* Question8.h */,
 				6403CE73221A4585006C489E /* Question8.c */,
+				6403CE79221A5B05006C489E /* Question11.h */,
+				6403CE7A221A5B05006C489E /* Question11.c */,
 			);
 			path = Offer;
+			sourceTree = "<group>";
+		};
+		6403CE75221A59FC006C489E /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				6403CE76221A5A4A006C489E /* SortAge.h */,
+				6403CE77221A5A4A006C489E /* SortAge.c */,
+			);
+			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F60050D21E9E287009423B8 /* stack.c in Sources */,
+				6403CE78221A5A4A006C489E /* SortAge.c in Sources */,
 				6403CE74221A4585006C489E /* Question8.c in Sources */,
 				1F60050E21E9E287009423B8 /* queue.c in Sources */,
 				1F6004FF21E9E1C9009423B8 /* main.m in Sources */,
+				6403CE7B221A5B05006C489E /* Question11.c in Sources */,
 				1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */,
 				1F60051721E9F81A009423B8 /* LinkedList.c in Sources */,
 				1F60051A21E9FBC9009423B8 /* Question6.c in Sources */,
