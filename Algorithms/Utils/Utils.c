@@ -26,3 +26,11 @@ char * strcpyAndAllocate(char *des, const char *src) {
     strcat(buffer, src);
     return buffer;
 }
+
+void swap(int * a, int * b) {
+    
+    if (a == b) return;
+    *a = (*a)^(*b);
+    *b = (*a)^(*b);
+    *a = (*a)^(*b);
+}

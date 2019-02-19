@@ -16,4 +16,6 @@
 bool ** alloc2DArray(int row, int column);
 char * strcpyAndAllocate(char *des, const char *src);
 
+void swap(int * a, int * b); // 交换两个 int 值
+
 #endif /* Utils_h */

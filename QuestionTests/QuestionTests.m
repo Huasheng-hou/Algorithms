@@ -107,6 +107,21 @@
     printFromHead(pHead);
 }
 
+- (void)testQuestion24 {
+    
+    listNode *pHead = calloc(1, sizeof(listNode));
+    pHead->m_nValue = 1;
+    
+    insert_Tail_LinkedList(pHead, 2);
+    insert_Tail_LinkedList(pHead, 3);
+    insert_Tail_LinkedList(pHead, 4);
+    insert_Tail_LinkedList(pHead, 5);
+    insert_Tail_LinkedList(pHead, 6);
+    
+    reverseLinkedList(&pHead);
+    printFromHead(pHead);
+}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

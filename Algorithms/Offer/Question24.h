@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-listNode * reverseLinkedList(listNode *pHead);
+void reverseLinkedList(listNode ** pHead);
 
 #endif /* Question24_h */

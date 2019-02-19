@@ -8,13 +8,22 @@
 
 #include "Question24.h"
 
-listNode * reverseLinkedList(listNode *pHead) {
+void reverseLinkedList(listNode ** pHead) {
     
-    if (pHead == NULL) return NULL;
-    listNode *tmpNode;
+    if (*pHead == NULL || (*pHead)->pNext == NULL) return;
     
-    while (pHead != NULL) { // 1次遍历，逐个翻转，时间复杂度 O(n)
+    listNode *nextNode = (*pHead)->pNext->pNext;
+    (*pHead)->pNext->pNext = *pHead;
+    *pHead = (*pHead)->pNext;
+    (*pHead)->pNext->pNext = NULL;
+    
+    while (nextNode != NULL) { // 1次遍历，逐个翻转，时间复杂度 O(n)
         
+        listNode *tmpNode = nextNode;
+        nextNode = nextNode->pNext;
+        
+        tmpNode->pNext = *pHead;
+        *pHead = tmpNode;
     }
-    return NULL;
+    return;
 }
