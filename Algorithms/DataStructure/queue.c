@@ -14,7 +14,7 @@ struct Queue
 
 queue * newQueue() {
 
-	struct Queue * queue = malloc(sizeof(queue));
+	struct Queue * queue = malloc(sizeof(struct Queue));
 
 	queue->_q_backStore = malloc(sizeof(void *) * MAX_SIZE);
 	queue->_q_front = queue->_q_backStore;
@@ -47,6 +47,12 @@ bool enqueue(queue * inputQueue, void * item) {
 	// printf("dequeued number is:%p\n", item);
 
 	return true;
+}
+
+int queueSize(queue *queue) {
+    
+    if (queue == NULL) return 0;
+    return queue->_q_size;
 }
 
 bool freeQueue(queue * inputQueue) {
