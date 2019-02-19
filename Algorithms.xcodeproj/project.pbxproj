@@ -30,6 +30,7 @@
 		64CD9D12221A8F9C0000B14C /* Question17.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D11221A8F9C0000B14C /* Question17.c */; };
 		64CD9D15221ACA330000B14C /* Question18.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D14221ACA330000B14C /* Question18.c */; };
 		64CD9D18221BD8190000B14C /* Question32.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D17221BD8190000B14C /* Question32.c */; };
+		64CD9D1C221BE7800000B14C /* Question27.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D1B221BE7800000B14C /* Question27.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		64CD9D14221ACA330000B14C /* Question18.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question18.c; sourceTree = "<group>"; };
 		64CD9D16221BD8190000B14C /* Question32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question32.h; sourceTree = "<group>"; };
 		64CD9D17221BD8190000B14C /* Question32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question32.c; sourceTree = "<group>"; };
+		64CD9D1A221BE7800000B14C /* Question27.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question27.h; sourceTree = "<group>"; };
+		64CD9D1B221BE7800000B14C /* Question27.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question27.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,7 @@
 		1F60051021E9E667009423B8 /* Offer */ = {
 			isa = PBXGroup;
 			children = (
+				64CD9D19221BE66C0000B14C /* Core */,
 				6403CE75221A59FC006C489E /* Miscellaneous */,
 				1F60051821E9FBC9009423B8 /* Question6.h */,
 				1F60051921E9FBC9009423B8 /* Question6.m */,
@@ -205,6 +209,8 @@
 				64CD9D14221ACA330000B14C /* Question18.c */,
 				1F69C4AD221AE8A600114EAE /* Question24.h */,
 				1F69C4AE221AE8A600114EAE /* Question24.c */,
+				64CD9D1A221BE7800000B14C /* Question27.h */,
+				64CD9D1B221BE7800000B14C /* Question27.c */,
 				64CD9D16221BD8190000B14C /* Question32.h */,
 				64CD9D17221BD8190000B14C /* Question32.c */,
 			);
@@ -227,6 +233,13 @@
 				64CD9D0B221A861E0000B14C /* Utils.c */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		64CD9D19221BE66C0000B14C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +360,7 @@
 				6403CE7B221A5B05006C489E /* Question11.c in Sources */,
 				1F6BB95F22199BF000EF9FEB /* Question7.c in Sources */,
 				64CD9D18221BD8190000B14C /* Question32.c in Sources */,
+				64CD9D1C221BE7800000B14C /* Question27.c in Sources */,
 				1F60051721E9F81A009423B8 /* LinkedList.c in Sources */,
 				1F60051A21E9FBC9009423B8 /* Question6.m in Sources */,
 				64CD9D0F221A8E2E0000B14C /* Question15.c in Sources */,

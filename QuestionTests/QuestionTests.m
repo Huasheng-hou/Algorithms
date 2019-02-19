@@ -15,6 +15,7 @@
 #include "Question17.h"
 #include "Question18.h"
 #include "Question24.h"
+#include "Question27.h"
 #include "Question32.h"
 
 @interface QuestionTests : XCTestCase
@@ -121,6 +122,18 @@
     
     reverseLinkedList(&pHead);
     printFromHead(pHead);
+}
+
+- (void)testQuestion27 {
+    
+    int preOrder[8] = {1, 2, 4, 7, 3, 5, 6, 8};
+    int inOrder[8] = {4, 7, 2, 1, 5, 3, 8, 6};
+    
+    binaryTreeNode *tree = rebuildBinaryTree(preOrder, inOrder, 8);
+    printBinaryTreeTopDown(tree);
+    
+    mirrorBinaryTree(&tree);
+    printBinaryTreeTopDown(tree);
 }
 
 - (void)testQuestion32 {
