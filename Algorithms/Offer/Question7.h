@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "BinaryTree.h"
 
+// 根据前序和中序遍历重建二叉树
 binaryTreeNode * rebuildBinaryTree(int * preOrder, int *inOrder, int length);
 
 #endif /* Question7_h */

@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "BinaryTree.h"
 
+// 中序遍历的下一个节点
 binaryTreeNode * nextInOrderNode(binaryTreeNode *node);
 
 #endif /* Question8_h */

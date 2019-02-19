@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+// 机器人的运动范围
 int robotMovingRange(int threshold);
 
 #endif /* Question13_h */

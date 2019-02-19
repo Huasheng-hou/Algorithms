@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "LinkedList.h"
 
+// 反转单向链表
 void printLinkedList_Reversely(listNode *list);
 
 #endif /* Question6_h */

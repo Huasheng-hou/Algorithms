@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 
+// 打印 1 到 n 位的数字
 void printToMaxOfNDigits(int n);
 
 #endif /* Question17_h */
