@@ -103,8 +103,8 @@
     insert_Tail_LinkedList(pHead, 5);
     insert_Tail_LinkedList(pHead, 6);
     
+    deleteNode(&pHead, pHead);
     printFromHead(pHead);
-    printLinkedList_Reversely(pHead);
 }
 
 - (void)testPerformanceExample {
