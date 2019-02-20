@@ -37,6 +37,7 @@
 		64CD9D2C221C0A010000B14C /* insertionsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D2B221C0A010000B14C /* insertionsort.c */; };
 		64CD9D2F221C0A120000B14C /* heapsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D2E221C0A110000B14C /* heapsort.c */; };
 		64CD9D32221C0A460000B14C /* mergesort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D31221C0A460000B14C /* mergesort.c */; };
+		64CD9D36221CE4040000B14C /* bubblesort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D35221CE4040000B14C /* bubblesort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		64CD9D2E221C0A110000B14C /* heapsort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = heapsort.c; sourceTree = "<group>"; };
 		64CD9D30221C0A460000B14C /* mergesort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mergesort.h; sourceTree = "<group>"; };
 		64CD9D31221C0A460000B14C /* mergesort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mergesort.c; sourceTree = "<group>"; };
+		64CD9D34221CE4040000B14C /* bubblesort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubblesort.h; sourceTree = "<group>"; };
+		64CD9D35221CE4040000B14C /* bubblesort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubblesort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +267,8 @@
 		64CD9D1D221C070A0000B14C /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				64CD9D34221CE4040000B14C /* bubblesort.h */,
+				64CD9D35221CE4040000B14C /* bubblesort.c */,
 				64CD9D1E221C07330000B14C /* quicksort.h */,
 				64CD9D1F221C07330000B14C /* quicksort.c */,
 				64CD9D21221C09B50000B14C /* shellsort.h */,
@@ -408,6 +413,7 @@
 				64CD9D32221C0A460000B14C /* mergesort.c in Sources */,
 				1F69C4AF221AE8A600114EAE /* Question24.c in Sources */,
 				1F6BB95B22199AAF00EF9FEB /* BinaryTree.m in Sources */,
+				64CD9D36221CE4040000B14C /* bubblesort.c in Sources */,
 				64CD9D12221A8F9C0000B14C /* Question17.c in Sources */,
 				64CD9D23221C09B50000B14C /* shellsort.c in Sources */,
 				1FDDB4C8221AF52400DE7B7E /* HHQueue.m in Sources */,
