@@ -38,6 +38,8 @@
 		64CD9D2F221C0A120000B14C /* heapsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D2E221C0A110000B14C /* heapsort.c */; };
 		64CD9D32221C0A460000B14C /* mergesort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D31221C0A460000B14C /* mergesort.c */; };
 		64CD9D36221CE4040000B14C /* bubblesort.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D35221CE4040000B14C /* bubblesort.c */; };
+		64CD9D38221D409C0000B14C /* SortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D37221D409C0000B14C /* SortTests.m */; };
+		64CD9D3B221D48E10000B14C /* RedBlackTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 64CD9D3A221D48E10000B14C /* RedBlackTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,9 @@
 		64CD9D31221C0A460000B14C /* mergesort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mergesort.c; sourceTree = "<group>"; };
 		64CD9D34221CE4040000B14C /* bubblesort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubblesort.h; sourceTree = "<group>"; };
 		64CD9D35221CE4040000B14C /* bubblesort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubblesort.c; sourceTree = "<group>"; };
+		64CD9D37221D409C0000B14C /* SortTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortTests.m; sourceTree = "<group>"; };
+		64CD9D39221D48E10000B14C /* RedBlackTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedBlackTree.h; sourceTree = "<group>"; };
+		64CD9D3A221D48E10000B14C /* RedBlackTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RedBlackTree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				1F4AEBC121EAEB5900A96DF4 /* QuestionTests.m */,
+				64CD9D37221D409C0000B14C /* SortTests.m */,
 				1F4AEBC321EAEB5900A96DF4 /* Info.plist */,
 			);
 			path = QuestionTests;
@@ -190,6 +196,8 @@
 				1F60051621E9F81A009423B8 /* LinkedList.c */,
 				1F60050C21E9E287009423B8 /* queue.h */,
 				1F60050A21E9E287009423B8 /* queue.c */,
+				64CD9D39221D48E10000B14C /* RedBlackTree.h */,
+				64CD9D3A221D48E10000B14C /* RedBlackTree.c */,
 				1F60050B21E9E287009423B8 /* stack.h */,
 				1F60050921E9E287009423B8 /* stack.c */,
 			);
@@ -385,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4AEBC221EAEB5900A96DF4 /* QuestionTests.m in Sources */,
+				64CD9D38221D409C0000B14C /* SortTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +408,7 @@
 				6403CE78221A5A4A006C489E /* SortAge.c in Sources */,
 				1FDDB4C9221AF52400DE7B7E /* HHStack.m in Sources */,
 				6403CE74221A4585006C489E /* Question8.c in Sources */,
+				64CD9D3B221D48E10000B14C /* RedBlackTree.c in Sources */,
 				1F60050E21E9E287009423B8 /* queue.c in Sources */,
 				1F6004FF21E9E1C9009423B8 /* main.m in Sources */,
 				6403CE7E221A6114006C489E /* Question13.c in Sources */,

@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void ShellSort(int *array, int length);
+
 #endif /* shellsort_h */
