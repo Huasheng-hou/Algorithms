@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185BFC9C22A12E3F0033C4BC /* mathtool.c in Sources */ = {isa = PBXBuildFile; fileRef = 185BFC9B22A12E3F0033C4BC /* mathtool.c */; };
 		1F4AEBC221EAEB5900A96DF4 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AEBC121EAEB5900A96DF4 /* QuestionTests.m */; };
 		1F6004F721E9E1C8009423B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6004F621E9E1C8009423B8 /* AppDelegate.m */; };
 		1F6004F921E9E1C9009423B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6004F821E9E1C9009423B8 /* Assets.xcassets */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185BFC9A22A12E2D0033C4BC /* mathtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mathtool.h; sourceTree = "<group>"; };
+		185BFC9B22A12E3F0033C4BC /* mathtool.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mathtool.c; sourceTree = "<group>"; };
 		1F4AEBBF21EAEB5900A96DF4 /* QuestionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4AEBC121EAEB5900A96DF4 /* QuestionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
 		1F4AEBC321EAEB5900A96DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185BFC9922A12E0D0033C4BC /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				185BFC9A22A12E2D0033C4BC /* mathtool.h */,
+				185BFC9B22A12E3F0033C4BC /* mathtool.c */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 		1F4AEBC021EAEB5900A96DF4 /* QuestionTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +183,7 @@
 		1F6004F421E9E1C8009423B8 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				185BFC9922A12E0D0033C4BC /* Math */,
 				1F60050821E9E287009423B8 /* DataStructure */,
 				1F60051021E9E667009423B8 /* Offer */,
 				64CD9D1D221C070A0000B14C /* Sort */,
@@ -426,6 +439,7 @@
 				64CD9D36221CE4040000B14C /* bubblesort.c in Sources */,
 				64CD9D12221A8F9C0000B14C /* Question17.c in Sources */,
 				64CD9D23221C09B50000B14C /* shellsort.c in Sources */,
+				185BFC9C22A12E3F0033C4BC /* mathtool.c in Sources */,
 				1FDDB4C8221AF52400DE7B7E /* HHQueue.m in Sources */,
 				64CD9D15221ACA330000B14C /* Question18.c in Sources */,
 				64CD9D29221C09F40000B14C /* selectionsort.c in Sources */,
