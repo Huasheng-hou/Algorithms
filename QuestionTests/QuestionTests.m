@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#include "Question3.h"
 #include "Question6.h"
 #include "Question7.h"
 #include "Question8.h"
@@ -30,6 +31,13 @@
 
 - (void)tearDown {
 //    sleep(100);
+}
+
+- (void)testQuestion3 {
+    
+    int arr [] = {2, 3, 1, 0, 1, 5, 3};
+    printRepeatedNumber(arr, 7);
+    printRepeatedNumber2(arr, 7);
 }
 
 - (void)testQuestion6 {

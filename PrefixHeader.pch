@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  algo
+//
+//  Created by apple on 2019/6/6.
+//  Copyright © 2019 apple. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+#include "Utils.h"
+#include "queue.h"
+#include "stack.h"
+#include "LinkedList.h"
+
+#import "BinaryTree.h"
+#import "HHQueue.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
