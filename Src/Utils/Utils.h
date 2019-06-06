@@ -11,11 +11,13 @@
 
 #include <stdio.h>
 
-#define kPrint(x) printf("result is:%d\n", x)
+#define kPrint(x)   printf("result is:%d\n", x)
+#define FILE_PATH   "/Users/apple/Develop/Algorithms/Src/TestCases/"
 
 bool ** alloc2DArray(int row, int column);
 char * strcpyAndAllocate(char *des, const char *src);
 
 void swap(int * a, int * b); // 交换两个 int 值
+char * kpath(char * filename);
 
 #endif /* Utils_h */

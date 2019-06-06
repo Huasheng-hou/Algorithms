@@ -37,6 +37,7 @@
 		188EA5DC22A8C24B004A16D0 /* HHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5BA22A8C24B004A16D0 /* HHStack.m */; };
 		188EA5DE22A8C24B004A16D0 /* Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5BD22A8C24B004A16D0 /* Template.cpp */; };
 		188EA5E022A8C286004A16D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5DF22A8C286004A16D0 /* main.m */; };
+		188EA5E422A8E589004A16D0 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5E322A8E589004A16D0 /* graph.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,6 +114,9 @@
 		188EA5BE22A8C24B004A16D0 /* Template.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Template.hpp; sourceTree = "<group>"; };
 		188EA5DF22A8C286004A16D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		188EA5E122A8C3D3004A16D0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		188EA5E222A8E589004A16D0 /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		188EA5E322A8E589004A16D0 /* graph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
+		188EA5E722A91328004A16D0 /* Graph4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Graph4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +151,13 @@
 			isa = PBXGroup;
 			children = (
 				188EA5DF22A8C286004A16D0 /* main.m */,
-				188EA57C22A8C24B004A16D0 /* Offer */,
-				188EA59522A8C24B004A16D0 /* Sort */,
-				188EA5A622A8C24B004A16D0 /* Utils */,
-				188EA5A922A8C24B004A16D0 /* Math */,
 				188EA5AC22A8C24B004A16D0 /* DataStructure */,
+				188EA5A922A8C24B004A16D0 /* Math */,
+				188EA57C22A8C24B004A16D0 /* Offer */,
 				188EA5BC22A8C24B004A16D0 /* PAT */,
+				188EA59522A8C24B004A16D0 /* Sort */,
+				188EA5E522A912E3004A16D0 /* TestCases */,
+				188EA5A622A8C24B004A16D0 /* Utils */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -232,6 +237,8 @@
 			children = (
 				188EA5B622A8C24B004A16D0 /* BinaryTree.h */,
 				188EA5AD22A8C24B004A16D0 /* BinaryTree.m */,
+				188EA5E322A8E589004A16D0 /* graph.c */,
+				188EA5E222A8E589004A16D0 /* graph.h */,
 				188EA5AF22A8C24B004A16D0 /* HHQueue.h */,
 				188EA5B422A8C24B004A16D0 /* HHQueue.m */,
 				188EA5B122A8C24B004A16D0 /* HHStack.h */,
@@ -255,6 +262,14 @@
 				188EA5BE22A8C24B004A16D0 /* Template.hpp */,
 			);
 			path = PAT;
+			sourceTree = "<group>";
+		};
+		188EA5E522A912E3004A16D0 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				188EA5E722A91328004A16D0 /* Graph4 */,
+			);
+			path = TestCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188EA5E422A8E589004A16D0 /* graph.c in Sources */,
 				188EA5D022A8C24B004A16D0 /* mergesort.c in Sources */,
 				188EA5C422A8C24B004A16D0 /* Question18.c in Sources */,
 				188EA5CE22A8C24B004A16D0 /* quicksort.c in Sources */,

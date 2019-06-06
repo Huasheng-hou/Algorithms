@@ -35,3 +35,10 @@ void swap(int * a, int * b) {
     *b = (*a)^(*b);
     *a = (*a)^(*b);
 }
+
+char * kpath(char * filename) {
+    char *path = malloc(sizeof(char) * 100);
+    strcpy(path, FILE_PATH);
+    strcat(path, "Graph4");
+    return path;
+}

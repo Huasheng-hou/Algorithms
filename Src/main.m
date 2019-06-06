@@ -6,13 +6,18 @@
 //  Copyright © 2019 apple. All rights reserved.
 //
 
+#include "graph.h"
+
 int main(int argc, const char * argv[]) {
     
     // insert code here...
     NSLog(@"Hello, World!");
+    MGraph *graph = malloc(sizeof(MGraph));
     
-    int test;
-    scanf("%d", &test);
-    printf("number is:%d\n", test);
+    freopen(kpath("Graph4"),"r",stdin);
+    
+    CreateGraph(graph);
+    DFS(graph, 1);
+    
     return 0;
 }
