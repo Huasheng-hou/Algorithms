@@ -38,6 +38,9 @@
 		188EA5DE22A8C24B004A16D0 /* Template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5BD22A8C24B004A16D0 /* Template.cpp */; };
 		188EA5E022A8C286004A16D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5DF22A8C286004A16D0 /* main.m */; };
 		188EA5E422A8E589004A16D0 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 188EA5E322A8E589004A16D0 /* graph.c */; };
+		18A325B022CF67190037F7AC /* Question57.c in Sources */ = {isa = PBXBuildFile; fileRef = 18A325AF22CF67190037F7AC /* Question57.c */; };
+		18A325B522D033520037F7AC /* RotateArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 18A325B422D033520037F7AC /* RotateArray.c */; };
+		18A325B822D0900E0037F7AC /* CloneGraph.c in Sources */ = {isa = PBXBuildFile; fileRef = 18A325B722D0900E0037F7AC /* CloneGraph.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +120,12 @@
 		188EA5E222A8E589004A16D0 /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		188EA5E322A8E589004A16D0 /* graph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
 		188EA5E722A91328004A16D0 /* Graph4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Graph4; sourceTree = "<group>"; };
+		18A325AE22CF67190037F7AC /* Question57.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question57.h; sourceTree = "<group>"; };
+		18A325AF22CF67190037F7AC /* Question57.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Question57.c; sourceTree = "<group>"; };
+		18A325B322D033520037F7AC /* RotateArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateArray.h; sourceTree = "<group>"; };
+		18A325B422D033520037F7AC /* RotateArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RotateArray.c; sourceTree = "<group>"; };
+		18A325B622D0900E0037F7AC /* CloneGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloneGraph.h; sourceTree = "<group>"; };
+		18A325B722D0900E0037F7AC /* CloneGraph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CloneGraph.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,7 @@
 		188EA57B22A8C24B004A16D0 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				18A325B222D033380037F7AC /* Leetcode */,
 				188EA5DF22A8C286004A16D0 /* main.m */,
 				188EA5AC22A8C24B004A16D0 /* DataStructure */,
 				188EA5A922A8C24B004A16D0 /* Math */,
@@ -189,6 +199,8 @@
 				188EA59422A8C24B004A16D0 /* Question27.h */,
 				188EA58A22A8C24B004A16D0 /* Question32.c */,
 				188EA58022A8C24B004A16D0 /* Question32.h */,
+				18A325AF22CF67190037F7AC /* Question57.c */,
+				18A325AE22CF67190037F7AC /* Question57.h */,
 			);
 			path = Offer;
 			sourceTree = "<group>";
@@ -196,20 +208,20 @@
 		188EA59522A8C24B004A16D0 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				188EA59622A8C24B004A16D0 /* shellsort.h */,
-				188EA59722A8C24B004A16D0 /* insertionsort.h */,
 				188EA59822A8C24B004A16D0 /* bubblesort.c */,
-				188EA59922A8C24B004A16D0 /* quicksort.h */,
-				188EA59A22A8C24B004A16D0 /* selectionsort.h */,
-				188EA59B22A8C24B004A16D0 /* mergesort.h */,
-				188EA59C22A8C24B004A16D0 /* heapsort.h */,
-				188EA59D22A8C24B004A16D0 /* insertionsort.c */,
-				188EA59E22A8C24B004A16D0 /* shellsort.c */,
-				188EA59F22A8C24B004A16D0 /* quicksort.c */,
 				188EA5A022A8C24B004A16D0 /* bubblesort.h */,
 				188EA5A122A8C24B004A16D0 /* heapsort.c */,
+				188EA59C22A8C24B004A16D0 /* heapsort.h */,
+				188EA59D22A8C24B004A16D0 /* insertionsort.c */,
+				188EA59722A8C24B004A16D0 /* insertionsort.h */,
 				188EA5A222A8C24B004A16D0 /* mergesort.c */,
+				188EA59B22A8C24B004A16D0 /* mergesort.h */,
+				188EA59F22A8C24B004A16D0 /* quicksort.c */,
+				188EA59922A8C24B004A16D0 /* quicksort.h */,
 				188EA5A322A8C24B004A16D0 /* selectionsort.c */,
+				188EA59A22A8C24B004A16D0 /* selectionsort.h */,
+				188EA59E22A8C24B004A16D0 /* shellsort.c */,
+				188EA59622A8C24B004A16D0 /* shellsort.h */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -272,6 +284,17 @@
 			path = TestCases;
 			sourceTree = "<group>";
 		};
+		18A325B222D033380037F7AC /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				18A325B422D033520037F7AC /* RotateArray.c */,
+				18A325B322D033520037F7AC /* RotateArray.h */,
+				18A325B622D0900E0037F7AC /* CloneGraph.h */,
+				18A325B722D0900E0037F7AC /* CloneGraph.c */,
+			);
+			path = Leetcode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,12 +352,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				188EA5E422A8E589004A16D0 /* graph.c in Sources */,
+				18A325B022CF67190037F7AC /* Question57.c in Sources */,
 				188EA5D022A8C24B004A16D0 /* mergesort.c in Sources */,
 				188EA5C422A8C24B004A16D0 /* Question18.c in Sources */,
 				188EA5CE22A8C24B004A16D0 /* quicksort.c in Sources */,
 				188EA5D622A8C24B004A16D0 /* BinaryTree.m in Sources */,
 				188EA5D722A8C24B004A16D0 /* stack.c in Sources */,
 				188EA5CB22A8C24B004A16D0 /* bubblesort.c in Sources */,
+				18A325B822D0900E0037F7AC /* CloneGraph.c in Sources */,
+				18A325B522D033520037F7AC /* RotateArray.c in Sources */,
 				188EA5C822A8C24B004A16D0 /* Question13.c in Sources */,
 				188EA5BF22A8C24B004A16D0 /* Question15.c in Sources */,
 				188EA5C022A8C24B004A16D0 /* Question11.c in Sources */,

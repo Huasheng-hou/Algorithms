@@ -20,4 +20,7 @@ char * strcpyAndAllocate(char *des, const char *src);
 void swap(int * a, int * b); // 交换两个 int 值
 char * kpath(char * filename);
 
+// * 打印数组
+void printArray(int * array, int length);
+
 #endif /* Utils_h */

@@ -90,6 +90,32 @@ void DFS(MGraph *G, int v) {
 }
 
 int CreateUDGALGraph(ALGraph *G) {
+    
+    printf("input your vertex number and arc number\n");
+    scanf("%d%d", &(G->vexnum), &(G->arcnum));
+    // 输入顶点
+    printf("input your vertexs, total number:%d\n", G->vexnum);
+    for (int i = 0; i < G->vexnum; i ++) {
+        
+        VNode   *vertex = G->vertices + i;
+        scanf("%d", &(vertex->data));
+    }
+    
+    int v1, v2, w;
+    for (int k = 0; k < G->arcnum; k ++) {
+        
+        printf("input your arc, number %d\n", k);
+        scanf("%d%d%d", &v1, &v2, &w);
+        
+        VNode   *vertex = G->vertices + v1 - 1;
+        ArcNode newArc  = {v2, NULL};
+        ArcNode *arc    = vertex->firstarc;
+        while (arc!=NULL) {
+//            arc 
+        }
+    }
+    
+    return 0;
     return 0;
 }
 

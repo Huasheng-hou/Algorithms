@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void mergeSort(int * array, int length);
+
 #endif /* mergesort_h */

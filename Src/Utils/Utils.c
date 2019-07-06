@@ -42,3 +42,14 @@ char * kpath(char * filename) {
     strcat(path, "Graph4");
     return path;
 }
+
+void printArray(int * array, int length) {
+    
+    if (array == NULL || length <= 0) return;
+    int i = 0;
+    while (i < length) {
+        printf("%d ", array[i]);
+        i++;
+    }
+    printf("\n");
+}
